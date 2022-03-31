@@ -17,13 +17,16 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatIconModule } from '@angular/material/icon';
 
+import { HttpClientModule } from '@angular/common/http';
+
 @NgModule({
   imports: [
+    BrowserModule,
+    HttpClientModule,
     MatSliderModule,
     MatButtonModule,
     MatDividerModule,
     MatIconModule,
-    BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule
   ],
