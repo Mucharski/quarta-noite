@@ -18,6 +18,11 @@ import { MatDividerModule } from '@angular/material/divider';
 import { MatIconModule } from '@angular/material/icon';
 
 import { HttpClientModule } from '@angular/common/http';
+import { CadastrosComponent } from './cadastros/cadastros.component';
+import { CreateProductComponent } from './cadastros/produtos/create/create.component';
+import { DeleteProductComponent } from './cadastros/produtos/delete/delete.component';
+import { ListProductComponent } from './cadastros/produtos/list/list.component';
+import { UpdateProductComponent } from './cadastros/produtos/update/update.component';
 
 @NgModule({
   imports: [
@@ -28,7 +33,7 @@ import { HttpClientModule } from '@angular/common/http';
     MatDividerModule,
     MatIconModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
   ],
   declarations: [
     AppComponent,
@@ -37,10 +42,15 @@ import { HttpClientModule } from '@angular/common/http';
     FooterComponent,
     HomeComponent,
     AdminComponent,
-    SobreComponent
+    SobreComponent,
+    CadastrosComponent,
+    CreateProductComponent,
+    DeleteProductComponent,
+    ListProductComponent,
+    UpdateProductComponent,
   ],
- 
+
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
